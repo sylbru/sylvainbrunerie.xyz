@@ -17,13 +17,23 @@
                 font-weight: normal;
                 max-width: 50rem;
                 margin: 3rem auto 0;
+                text-shadow: 0 0 .2em #000;
                 line-height: 1.5;
                 font-size: 120%;
-                padding: 2rem;
+                padding: 3rem;
+                background: rgba(0,0,0,0.5);
+                border-radius: 0.5em;
+            }
+            .stack > * {
+              margin-block: 0;
+            }
+
+            .stack > * + * {
+              margin-block-start: 2rem;
             }
         </style>
     </head>
     <body>
-        <main>{{ content }}</main>
+        <main class="stack">{{ content }}</main>
     </body>
 </html>
