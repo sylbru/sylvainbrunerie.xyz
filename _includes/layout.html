@@ -1,7 +1,30 @@
 <!doctype html>
 <html>
-    <head>
+    <head
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>Sylvain Brunerie - Homepage</title>
+        <style>
+            html {
+                background-color: #14562e;
+                background-image: radial-gradient(
+                    circle,
+                    #1a6d3c 0%,
+                    #14562e 100%
+                );
+                color: #fff;
+            }
+            body {
+                font-family: ui-monospace, "Cascadia Code", "Source Code Pro",
+                    Menlo, Consolas, "DejaVu Sans Mono", monospace;
+                font-weight: normal;
+                max-width: 50rem;
+                margin: 3rem auto 0;
+                line-height: 1.5;
+                font-size: 120%;
+                padding: 2rem;
+            }
+        </style>
     </head>
     <body>
         <main>{{ content }}</main>
