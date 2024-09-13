@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
     font-weight: normal;
     text-shadow: 0 0 .2em #000;
     line-height: 1.5;
@@ -14,11 +14,6 @@ body {
     margin: 0;
     display: flex;
     height: 100vh;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-
 }
 
 .main {
