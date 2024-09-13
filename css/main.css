@@ -1,0 +1,45 @@
+html {
+    background-color: #14562e;
+    background-image: url(../img/clay-banks-50pct.webp);
+    background-size: cover;
+    color: #fff;
+}
+
+body {
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    font-weight: normal;
+    text-shadow: 0 0 .2em #000;
+    line-height: 1.5;
+    font-size: 130%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+}
+
+main {
+    max-width: 50rem;
+    margin: 3rem auto 0;
+    padding: 3rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 1.5em;
+}
+
+.photo-credits {
+    position: absolute;
+    right: .2em;
+    bottom: .2em;
+    color: #eee;
+
+    & a {
+        color: inherit;
+    }
+}
+
+.stack > * {
+    margin-block: 0;
+}
+
+.stack > * + * {
+    margin-block-start: 2rem;
+}
