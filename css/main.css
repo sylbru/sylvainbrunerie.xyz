@@ -11,6 +11,7 @@ body {
     text-shadow: 0 0 .2em #000;
     line-height: 1.5;
     font-size: 130%;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,22 +19,26 @@ h1, h2, h3, h4, h5 {
 
 }
 
-main {
-    max-width: 50rem;
-    margin: 3rem auto 0;
+.main {
+    max-width: 60rem;
+    margin: 0 auto 0;
     padding: 3rem;
     background: rgba(0,0,0,0.5);
     border-radius: 1.5em;
 }
 
+.personal { text-align: right; }
+.personal h1 { text-align: left; }
+
+header {
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1em;
+}
+
 .occupation {
     font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-
+    text-align: center;
     font-size: 1.2em;
-}
-.contact {
-    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-
 }
 
 .photo-credits {
@@ -53,4 +58,19 @@ main {
 
 .stack > * + * {
     margin-block-start: var(--space, 1rem);
+}
+
+.switcher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.switcher > * {
+    flex-grow: 1;
+    flex-basis: calc((30rem - 100%) * 999);
+    color: inherit;
+    text-transform: uppercase;
+    text-align: center;
+
 }
