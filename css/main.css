@@ -30,18 +30,20 @@ h1, h2, h3, h4, h5 {
     align-self: center;
 }
 
-.personal { text-align: right; }
-.personal h1 { text-align: left; }
-
 header {
     border-bottom: 1px solid currentColor;
     padding-bottom: 1em;
+    text-align: right;
 }
 
 .occupation {
     font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-    text-align: center;
     font-size: 1.2em;
+}
+
+.contact {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    font-size: .9em;
 }
 
 .photo-credits {
