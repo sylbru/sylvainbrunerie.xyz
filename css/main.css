@@ -3,6 +3,7 @@ html {
     background-image: url(../img/clay-banks-50pct.webp);
     background-size: cover;
     color: #fff;
+    font-size: 130%;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
     font-weight: normal;
     text-shadow: 0 0 .2em #000;
     line-height: 1.5;
-    font-size: 130%;
     margin: 0;
     display: flex;
     height: 100vh;
@@ -26,13 +26,14 @@ body {
 }
 
 header {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
     border-bottom: 1px dotted currentColor;
     padding-bottom: 1em;
     text-align: right;
+    font-size: .9em;
 }
 
 .occupation {
-    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
     font-size: 1.2em;
 }
 
