@@ -47,10 +47,10 @@ header {
     right: .2em;
     bottom: .2em;
     color: #eee;
+}
 
-    & a {
-        color: inherit;
-    }
+.photo-credits a {
+    color: inherit;
 }
 
 .stack > * {

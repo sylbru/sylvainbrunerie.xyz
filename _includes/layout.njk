@@ -4,7 +4,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Sylvain Brunerie - Homepage</title>
-        <link rel="stylesheet" href="css/main.css" />
+        {% set css %}{% include "css/main.css" %}{% endset %}
+        <style>
+            {{ css | cssmin | safe }}
+        </style>
     </head>
     <body>
         <div class="main stack" style="--space: 5rem">
@@ -20,14 +23,12 @@
                 <a href="/code">Code</a>
                 <a href="/music">Music</a>
             </nav> -->
-            <div>{{ content }}</div>
+            <div>{{ content | safe }}</div>
         </div>
-        <small class="photo-credits"
-            >Photo de
-            <a
-                href="https://unsplash.com/fr/@claybanks?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Clay Banks</a
-            >
+        <small class="photo-credits">
+            <a href="https://unsplash.com/fr/@claybanks?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                <span aria-label="Photo">📷</span> Clay Banks
+            </a>
         </small>
     </body>
 </html>
