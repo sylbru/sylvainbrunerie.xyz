@@ -104,12 +104,26 @@ textarea:not([rows]) {
   --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
 }
 
+/** FLUID TYPE */
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+}
+
 html {
     background-color: #14562e;
     background-image: url(../img/clay-banks-50pct.webp);
     background-size: cover;
     color: #fff;
-    font-size: 130%;
+    font-size: var(--step-0);
 }
 
 body {
@@ -119,6 +133,11 @@ body {
     margin: 0;
     height: 100vh;
 }
+
+h1 { font-size: var(--step-3); }
+h2 { font-size: var(--step-2); }
+h3 { font-size: var(--step-1); }
+h4 { font-size: var(--step-0); }
 
 a {
     color: inherit;
@@ -145,21 +164,16 @@ header {
     border-bottom: 1px dotted currentColor;
     padding-bottom: 1em;
     text-align: right;
-    font-size: .9em;
-}
-
-.occupation {
-    font-size: 1.2em;
 }
 
 .contact {
     font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-    font-size: .9em;
 }
 
 .photo-credits {
     font-family: system-ui;
     position: absolute;
+    font-size: var(--step--2);
     right: .2em;
     bottom: .2em;
     color: #eee;
