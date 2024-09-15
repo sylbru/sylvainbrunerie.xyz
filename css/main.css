@@ -43,6 +43,7 @@ header {
 }
 
 .photo-credits {
+    font-family: system-ui;
     position: absolute;
     right: .2em;
     bottom: .2em;
