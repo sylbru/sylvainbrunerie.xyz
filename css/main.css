@@ -134,7 +134,7 @@ a:hover {
 .main {
     max-width: 80ch;
     margin: 0 auto 0;
-    padding: 3rem;
+    padding: var(--space-s-l);
     background: rgba(0,0,0,0.5);
     align-self: center;
     min-height: 100vh;
