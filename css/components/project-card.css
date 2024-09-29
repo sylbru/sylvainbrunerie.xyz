@@ -8,15 +8,17 @@
     display: block;
     padding: var(--space-s);
     font-family: var(--monospace-font-stack);
-    color: #000;
-    background: #fafafa;
+    color: #fafafa;
+    background: none;
     text-transform: uppercase;
     text-decoration: none;
+    border-bottom: .1em dashed currentColor;
 }
 
 .project-card > header > a:hover {
-    color: #fafafa;
-    background: none;
+    color: #000;
+    background: #fafafa;
+    border-bottom-color: transparent;
 }
 
 .project-card > header > a::after {
