@@ -1,5 +1,6 @@
 {% include "css/reset.css" %}
 {% include "css/fluid.css" %}
+{% include "css/variables.css" %}
 {% include "css/elements.css" %}
 {% include "css/layout-components/stack.css" %}
 {% include "css/layout-components/switcher.css" %}
@@ -24,12 +25,12 @@
 
 .personal {
     --space: var(--space-xs-s);
-    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+    font-family: var(--antique-font-stack);
     text-align: right;
 }
 
 .contact {
-    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    font-family: var(--monospace-font-stack);
     /* Monospace fonts seem to be bigger, also contact info is not super critical */
     font-size: var(--step--1);
 }

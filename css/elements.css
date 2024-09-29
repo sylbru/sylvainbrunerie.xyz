@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+    font-family: var(--antique-font-stack);
     font-weight: normal;
     font-size: var(--step-0);
     line-height: 1.75;
