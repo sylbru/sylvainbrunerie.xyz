@@ -1,6 +1,7 @@
 .project-card {
     --space: 0;
     border: .1em solid currentColor;
+    position: relative;
 }
 
 .project-card > header > a {
@@ -16,6 +17,12 @@
 .project-card > header > a:hover {
     color: #fafafa;
     background: none;
+}
+
+.project-card > header > a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
 }
 
 .project-card:has(a:hover) {
