@@ -4,6 +4,8 @@
 {% include "css/elements.css" %}
 {% include "css/layout-components/stack.css" %}
 {% include "css/layout-components/switcher.css" %}
+{% include "css/layout-components/grid.css" %}
+{% include "css/components/project-card.css" %}
 
 .spacer {
     padding: var(--space-2xs-l);

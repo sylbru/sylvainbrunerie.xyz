@@ -1,0 +1,30 @@
+.project-card {
+    --space: 0;
+    border: .1em solid currentColor;
+}
+
+.project-card > header > a {
+    display: block;
+    padding: var(--space-s);
+    font-family: var(--monospace-font-stack);
+    color: #000;
+    background: #fafafa;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.project-card > header > a:hover {
+    color: #fafafa;
+    background: none;
+}
+
+.project-card:has(a:hover) {
+    box-shadow: 0 0 0 .2em #fafafa inset;
+}
+
+.project-card__description {
+    padding: var(--space-s);
+    font-size: var(--step--1);
+    text-wrap: balance;
+    text-wrap: pretty;
+}
