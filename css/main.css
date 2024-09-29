@@ -42,7 +42,7 @@
 
 .photo-credits {
     font-family: system-ui;
-    position: absolute;
+    position: fixed;
     font-size: var(--step--2);
     right: .2em;
     bottom: .2em;
@@ -52,8 +52,8 @@
 .photo-credits a {
     color: inherit;
     text-decoration-thickness: initial;
-
 }
+
 .photo-credits a:hover {
     background: none;
     text-decoration: underline;
