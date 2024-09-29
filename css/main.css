@@ -158,7 +158,6 @@ a:hover {
     padding: var(--space-s-l);
     background: rgba(0,0,0,0.75);
     align-self: center;
-    min-height: 100vh;
     border-radius: var(--step-0);
 }
 
@@ -168,6 +167,10 @@ a:hover {
 
 .spacer {
     padding: var(--space-2xs-l);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header {
