@@ -5,19 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Sylvain Brunerie - Homepage</title>
         {% set css %}{% include "css/main.css" %}{% endset %}
-        <style>
-            {{ css | cssmin | safe }}
-        </style>
+        <style>{{ css | cssmin | safe }}</style>
     </head>
     <body>
         <div class="spacer">
             <div class="main | stack">
                 <header class="personal | stack">
                     <h1>Sylvain Brunerie</h1>
-                    <p class="occupation">web developer || musician</p>
-                    <p class="contact">
-                        sylvain.brunerie<wbr>@gmail.com
-                    </p>
+                    <p class="occupation">web developer / musician</p>
+                    <p class="contact">sylvain.brunerie<wbr>@gmail.com</p>
                 </header>
                 <div>{{ content | safe }}</div>
             </div>
