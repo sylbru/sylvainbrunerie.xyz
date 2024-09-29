@@ -29,6 +29,10 @@
     text-align: right;
 }
 
+.occupation {
+    font-style: italic;
+}
+
 .contact {
     font-family: var(--monospace-font-stack);
     /* Monospace fonts seem to be bigger, also contact info is not super critical */
@@ -46,4 +50,9 @@
 
 .photo-credits a {
     color: inherit;
+}
+
+.introduction {
+    text-wrap: balance;
+    max-inline-size: 50ch;
 }
