@@ -50,6 +50,12 @@
 
 .photo-credits a {
     color: inherit;
+    text-decoration-thickness: initial;
+
+}
+.photo-credits a:hover {
+    background: none;
+    text-decoration: underline;
 }
 
 .introduction {
