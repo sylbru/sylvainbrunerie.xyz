@@ -15,7 +15,9 @@
                     <p class="occupation">web developer / musician</p>
                     <p class="contact">sylvain.brunerie<wbr>@gmail.com</p>
                 </header>
-                <div class="introduction">{{ content | safe }}</div>
+                {% block content %}
+                <main>{{ content|safe }}</main>
+                {% endblock %}
             </div>
         </div>
         <small class="photo-credits">
