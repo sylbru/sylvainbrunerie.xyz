@@ -1,6 +1,5 @@
 html {
-    background-color: #14562e;
-    background-image: url(../img/clay-banks-50pct.webp);
+    background: #000 url(../img/clay-banks-square-0.5.jpg);
     background-size: cover;
     color: #fff;
 }
