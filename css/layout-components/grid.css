@@ -1,5 +1,9 @@
 .grid {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--basis, 30ch), 1fr));
+}
+
+.grid[data-rows="masonry"] {
+    grid-template-rows: masonry;
 }

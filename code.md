@@ -4,7 +4,7 @@ layout: "layout.njk"
 
 # Code
 
-<ul role="list" class="grid">
+<ul role="list" class="grid" data-rows="masonry" style="--basis: 20ch">
 {% for project in collections.project %}
 <li>
   <article class="project-card | stack">
